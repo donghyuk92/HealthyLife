@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title3">알람설정</string>
+    <string name="reset">반복설정</string>
+    <string name="title1">어떻게?</string>
+    <string name="title2">운동기록</string>
+    <string name="Monday">일</string>
+    <string name="Tuesday">월</string>
+    <string name="Wednesday">화</string>
+    <string name="Thursday">수</string>
+    <string name="Friday">목</string>
+    <string name="Saturday">금</string>
+    <string name="Sunday">토</string>
+    <string name="Save">저장</string>
+    <string name="Cancel">취소</string>
+    <string name="Record">기록 </string>
+    <string name="Stop">중지</string>
+    <string name="alarming">운동합시다!</string>
+    <string name="calorie">칼로리 계산</string>
+    <string name="calorieinfo">칼로리 정보</string>
+
+    <string-array name="tbl1">
+        <item>배드민턴/315/429/572</item>
+        <item>골       프/278/380/506</item>
+        <item>스케이트/315/429/572</item>
+        <item>스       키/315/429/572</item>
+        <item>축       구/448/611/814</item>
+        <item>탁       구/230/314/418</item>
+        <item>테니스:단식/351/479/638</item>
+        <item>테니스:복식/218/297/396</item>
+        <item>배       구/266/363/484</item>
+        <item>자  전  거/327/446/594</item>
+        <item>조       깅/508/693/836</item>
+        <item>줄  넘  기/460/627/806</item>
+        <item>수       영/424/578/770</item>
+        <item>산       책/194/264/352</item>
+        <item>빨리걷기/290/396/528</item>
+        <item>노       동/230/314/418</item>
+        <item>목  수  일/182/248/330</item>
+        <item>정원가꾸기/387/528/704</item>
+        <item>자동차세차/182/248/330</item>
+        <item>집안청소/194/264/352</item>
+        <item>창문닦기/194/264/352</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:title="Menu"
+        android:icon="@android:drawable/arrow_down_float"
+        app:showAsAction="always|withText">
+        <menu>
+            <item
+                android:id="@+id/title1"
+                android:title="@string/title1"
+                android:icon="@android:drawable/stat_sys_headset"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/title2"
+                android:title="@string/title2"
+                android:icon="@android:drawable/ic_menu_gallery"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/title3"
+                android:title="@string/title3"
+                android:icon="@android:drawable/ic_popup_reminder"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/calorie"
+                android:title="@string/calorie"
+                android:icon="@android:drawable/sym_action_chat"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+    </item>
+
+
+</menu>

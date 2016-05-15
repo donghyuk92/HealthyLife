@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".FirstActivity" >
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:weightSum="9" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.86"
+            android:background="@drawable/bg_cal_1"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="표준체중 구하기"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/Title_Textsize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10" >
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:hint="자신의 키"
+                    android:inputType="number"
+                    android:textSize="@dimen/Input_Textsize" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#dcff64"
+                    android:gravity="center"
+                    android:text="0.9"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtResult1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Kg"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="계산"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:id="@+id/calc1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.92"
+            android:background="@drawable/bg_cal_2"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="성인 하루 권장 칼로리 계산법  "
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/Title_Textsize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10" >
+
+                <EditText
+                    android:id="@+id/edt2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:hint="표준체중 "
+                    android:inputType="number"
+                    android:textSize="@dimen/Input_Textsize" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:hint="활동지수"
+                    android:inputType="number"
+                    android:textSize="@dimen/Input_Textsize" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtResult2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="kcal"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textSize="@dimen/Input_Textsize"
+                    android:text="계산"
+                    android:id="@+id/calc2"
+                    android:layout_weight="0.59" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/table" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_start" />
+
+    </LinearLayout>
+
+</LinearLayout>
